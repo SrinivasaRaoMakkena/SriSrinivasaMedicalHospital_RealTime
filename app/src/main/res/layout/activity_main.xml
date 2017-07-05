@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#535151"
+    android:id="@+id/relativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="17dp"
+    android:layout_margin="20dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true">
+<ImageView
+    android:src="@drawable/hospital2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:elevation="5dp"
+    />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email "
+        android:background="#fff"
+        android:textSize="25sp"
+        android:elevation="5dp"
+
+        />
+    <EditText
+        android:id="@+id/passWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="#fff"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:elevation="5dp"
+
+
+        />
+<Button
+    android:text="Login"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAllCaps="false"
+    android:background="#187405"
+    android:textColor="#fff"
+    android:textSize="20sp"
+    android:layout_marginTop="10dp"
+    android:elevation="5dp"
+    android:id="@+id/login"
+    />
+    <Button
+        android:text="forgot password??"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent"
+        android:textColor="#fc0905"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:elevation="5dp"
+        android:id="@+id/forgetPassword"
+        android:gravity="right"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="100"
+        >
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Create new account?"
+            android:textColor="#ffffff"
+            android:layout_weight="75"
+            android:textSize="15sp"
+            android:gravity="right"
+        />
+        <Button
+            android:id="@+id/signUp"
+            android:text="SignUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_weight="25"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:textSize="20sp"
+            android:gravity="end"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:text="Drop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="dropTable"/>
+
+</LinearLayout>
+</RelativeLayout>
